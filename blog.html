@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+      <!-- navbar -->
+      <nav class="navbar bg-body-tertiary sticky-top p-3">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="#">
+                <img src="./asserts/Logo.png" class="ms-md-5" alt="Logo" width="100" height="24">
+            </a>
+            <a class="btn btn-danger me-md-5" href="./blog.html" target="_blank">Blog</a>
+        </div>
+    </nav>
+    <!-- blog part -->
+    <main class="bg-white m-5 p-5">
+        <div class="m-5 p-5" style="background-color: rgb(163, 246, 249);">
+          <h1 class="fs-3 " onclick="toggleAnswer('answer1')">1. Discuss the scope of var, let, and const?</h1>
+          <br>
+          <p id="answer1" class="fs-4" style="display: none;"><b>Answer :</b> In JavaScript three of them are used to declare variables. Scope of var, let & const are discussed below- <br>
+            <b>var:</b> var declarations are globally scoped or function scoped. Developers nowadays use less var. var creates variables that can be reassigned another value. <br>
+            <b>let:</b> let is declared as block scope. let creates variables that can be reassigned another value. Developers nowadays use more let. It can't define before it is declared. <br>
+            <b>const:</b> const is declared as block scope. const creates "constant" variables that cannot be reassigned another value. If there is no need to change the value of a variable, then it is good to use const to declare a variable. Developers nowadays use more let. It can't define before it is declared.
+          </p>
+        </div>
+        <div class="m-5 p-5" style="background-color:rgb(236, 198, 180);">
+          <h1 class="fs-3 " onclick="toggleAnswer('answer2')">2. Tell us the use cases of null and undefined</h1>
+          <br>
+          <p id="answer2" class="fs-4" style="display: none;"><b>Answer :</b> 
+             <br>
+            <b>Null:</b> In JavaScript, Null is an assignment value, which is an empty value. It means nothing or a blank value.<br>
+            Which is the intentional absence of the value. It is one of the primitive values of JavaScript. <br> 
+            <small><b>Syntax: null</b></small> <br><br>
+            <b>Undefined:</b> In this variable has been declared, but the value is not assigned yet in that variable. Then the output is undefined. To prevent undefined as output, one must assign a value to the declared variable <br>
+            <small><b>Syntax: undefined</b></small>
+            <br>
+          </p>
+        </div>
+        <div class="m-5 p-5" style="background-color: rgb(251, 245, 159);">
+          <h1 class="fs-3 " onclick="toggleAnswer('answer3')">3. What do you mean by REST API?</h1>
+          <br>
+          <p id="answer3" class="fs-4" style="display: none;"><b>Answer :</b> <br>
+            <b>REST API :</b> REST stands for Representational State Transfer and API stands for Application Programming Interface.
+            <br>
+            <b>Application Programming Interface</b> means a set of rules that define how a device or an application is going to communicate or be connected with each other.
+            <br>
+            <b>Representational State Transfer (REST) </b>refers to an architectural style which is used to developing web services.
+            <br>
+            <b>REST API</b> means an API that conforms to represent the state transfer architectural style or design principle of the REST. It is part of the integration framework.
+            <br>
+          </p>
+        </div>
+      </main>
+    
+      <script>
+        function toggleAnswer(id) {
+          var answer = document.getElementById(id);
+          answer.style.display = (answer.style.display === 'none' || answer.style.display === '') ? 'block' : 'none';
+        }
+      </script>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- <script src="app.js"></script> -->
+</body>
+</html>
