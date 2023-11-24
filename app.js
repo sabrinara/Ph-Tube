@@ -69,7 +69,7 @@ const displayData = (data) => {
                         <div class="position-relative">
                             <img src="${data?.thumbnail}" class="img-fluid card-img-top" style="height: 200px" alt="...">
                             ${data?.others?.posted_date &&
-                                `<p class='position-absolute rounded text-white bg-black p-2 ' style="margin-top: -8vh; right: 2vh ">${secToMin(data?.others?.posted_date)}</p>`
+                                `<p class='position-absolute rounded text-white bg-black p-2 opacity-50' style="margin-top: -8vh; right: 2vh ">${secToMin(data?.others?.posted_date)}</p>`
                             }
                         </div>
                         <div class="card-body mt-2">
